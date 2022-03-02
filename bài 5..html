@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--// Tính tổng của 20 số đầu tiên trong dãy fibonacci.-->
+<script>
+    let a = 0 , b= 0, c=0, tong=0
+    let fibonacci = "";
+    for (let i=0; i<20;i++){
+        if(i==0){
+            a=1
+            c=1
+            fibonacci += a+ " "
+            tong +=a
+        }else{
+            a= b+c
+            b = c
+            c = a
+            fibonacci += a+ " "
+            tong +=a
+            console.log(i +" = "+a)
+        }
+    }
+    document.write("Dãy Fibonacci là "+fibonacci+"<br>")
+    document.write("Tổng của các số = "+ tong );
+
+</script>
+
+</body>
+</html>
